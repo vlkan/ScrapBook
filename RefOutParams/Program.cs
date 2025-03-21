@@ -25,6 +25,10 @@
         AddWithParams(1, 2, 3);
         AddWithParams(6, 7, 8, 9, 0);
         #endregion
+
+        var test = TestOut(out int res);
+
+        Console.WriteLine(test);
     }
 
     public static void ChangeValue(ref int value)
@@ -48,5 +52,11 @@
             sum += value;
         }
         Console.WriteLine("Sum: {0}", sum);
+    }
+
+    public static int TestOut(out int res)
+    {
+        res = 10;
+        return res * 10;
     }
 }
