@@ -13,9 +13,9 @@
 
     public interface IAnimal
     {
-        public void Eat();
-        public void Breath();
-        public void Sit() // Default Implementation
+        void Eat();
+        void Breath();
+        void Sit() // Default Implementation
         {
             Console.WriteLine("Sit!");
         }
