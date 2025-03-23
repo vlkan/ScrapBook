@@ -9,6 +9,7 @@
 
         Human human = new Turkish();
         human.Sit();
+        human.Test1();
     }
 
     public interface IAnimal
@@ -34,6 +35,11 @@
 
     public abstract class Human
     {
+        public void Test1()
+        {
+
+        }
+
         public abstract void Eat();
         public abstract void Breath();
         public virtual void Sit()
