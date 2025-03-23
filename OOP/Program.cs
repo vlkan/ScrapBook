@@ -8,7 +8,7 @@
     public interface IAnimal
     {
         public void Eat();
-        public abstract void Breath();
+        public void Breath();
         public void Sit() // Default Implementation
         {
             Console.WriteLine("Sit!");
@@ -23,38 +23,41 @@
         {
             Console.WriteLine("Sit!");
         }
+
+        public void Walk()
+        {
+            Console.WriteLine("Walk!");
+        }
     }
 
     public class Dog : IAnimal
     {
-        public void Eat()
-        {
-            Console.WriteLine("Dog is eating.");
-        }
         public void Breath()
         {
-            Console.WriteLine("Dog is breathing.");
+            throw new NotImplementedException();
         }
 
-        public void Sit()
+        public void Eat()
         {
-            Console.WriteLine("Dog is sitting.");
+            throw new NotImplementedException();
         }
     }
 
     public class Turkish : Human
     {
-        public override void Eat()
-        {
-            Console.WriteLine("Turkish is eating.");
-        }
         public override void Breath()
         {
-            Console.WriteLine("Turkish is breathing.");
+            throw new NotImplementedException();
         }
+
+        public override void Eat()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Sit()
         {
-            Console.WriteLine("Turkish is sitting.");
+            base.Sit();
         }
     }
 }
