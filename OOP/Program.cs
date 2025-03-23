@@ -3,6 +3,12 @@
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
+
+        IAnimal animal = new Dog();
+        animal.Sit();
+
+        Human human = new Turkish();
+        human.Sit();
     }
 
     public interface IAnimal
