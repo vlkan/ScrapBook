@@ -5,7 +5,7 @@
         Console.WriteLine("Hello, World!");
 
         IAnimal animal = new Dog();
-        animal.Sit();
+        animal.SitP();
 
         Human human = new Turkish();
         human.Sit();
@@ -15,9 +15,20 @@
     {
         void Eat();
         void Breath();
-        void Sit() // Default Implementation
+        private void Sit() // Default Implementation, Helper Method
         {
-            Console.WriteLine("Sit!");
+            Console.WriteLine("Sit!: IAnimal");
+        }
+
+        public void SitP() // Default Implementation
+        {
+            Sit();
+            StandUp();
+        }
+
+        private static void StandUp()
+        {
+            Console.WriteLine("Thats Static!: IAnimal");
         }
     }
 
@@ -27,12 +38,17 @@
         public abstract void Breath();
         public virtual void Sit()
         {
-            Console.WriteLine("Sit!");
+            Console.WriteLine("Sit!: Human");
         }
 
         public void Walk()
         {
-            Console.WriteLine("Walk!");
+            Console.WriteLine("Walk!: Human");
+        }
+
+        public Human(string name)
+        {
+            Console.WriteLine("{0} CTOR: Human CTOR", name);
         }
     }
 
@@ -47,10 +63,15 @@
         {
             throw new NotImplementedException();
         }
+
     }
 
     public class Turkish : Human
     {
+        public Turkish() : base("Turkish")
+        {
+            Console.WriteLine("Turkish CTOR");
+        }
         public override void Breath()
         {
             throw new NotImplementedException();
