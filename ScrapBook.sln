@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread-Safe-Example", "Thre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionFunc", "ExpressionFunc\ExpressionFunc.csproj", "{F2F51FC4-56B6-4E7B-B6C4-70CD4BBE5B67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTask", "AsyncTask\AsyncTask.csproj", "{E1697819-F836-4038-BCCC-482287F00D4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F2F51FC4-56B6-4E7B-B6C4-70CD4BBE5B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F51FC4-56B6-4E7B-B6C4-70CD4BBE5B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2F51FC4-56B6-4E7B-B6C4-70CD4BBE5B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1697819-F836-4038-BCCC-482287F00D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1697819-F836-4038-BCCC-482287F00D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1697819-F836-4038-BCCC-482287F00D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1697819-F836-4038-BCCC-482287F00D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
