@@ -104,3 +104,16 @@ public class Dog : Animal
         //base.Sleep(); // Call the base class Sleep method
     }
 }
+
+public sealed class Cat : Animal // Sealed class
+{
+    public override void Speak() // Implementing abstract method
+    {
+        Console.WriteLine("Meow! Meow!");
+    }
+}
+
+//public class Tekir : Cat
+//{
+//    // Error: Cannot derive from sealed type 'Cat'
+//}
